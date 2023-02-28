@@ -22,7 +22,7 @@ body, html{
 main{
     position: relative;
     height: 100vh;
-    width: 100wv;
+    width: 100vw;
 }
 
 section#login{
@@ -37,9 +37,13 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.463);
+
+    transition: width 0.3s, height 0.3s; /*para dar uma animação nas letras, quando mudar a tela*/
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
+    display: block;
     background:#5f2c82 url(../imagens/login.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom; /* a imagem será posicionada para aparecer a sua parte de baixo e da esquerda. */
